@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <!--
+        action : 전송할 정보를 처리할 웹페이지의 URL
+        method : 서버로 전송할 HTTP 방식
+            get : URL에 보내는 정보가 보이는 방식
+            post : 보내는 내용을 감추어서 보내는 방식
+        novalidate : 유효성을 검사하지 않도록 지정
+    -->
+    <form action="../table/table01.html" name="" method="GET">
+      <div>
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div>
+        <label for="password">비밀번호</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <label for="gender_m">성별</label>
+        <input type="radio" name="gender" id="gender_m" checked />남성
+        <input type="radio" name="gender" id="gender_f" />여성
+      </div>
+      <div>
+        <label for="apple">과일 선택</label>
+        <input type="checkbox" name="apple" id="apple" />사과
+        <input type="checkbox" name="banana" id="banana" />바나나
+        <input type="checkbox" name="strawberry" id="strawberry" checked />딸기
+        <input type="checkbox" name="grape" id="grape" />포도
+        <input type="checkbox" name="kiwi" id="kiwi" />키위
+      </div>
+      <div>
+        <textarea name="" id="" cols="30" rows="10">하고 싶은 말</textarea>
+      </div>
+      <div>
+        <select name="" id="">
+          <option value="사과">사과</option>
+          <option value="포도" selected>포도</option>
+          <option value="딸기">딸기</option>
+          <option value="수박">수박</option>
+        </select>
+      </div>
+      <div>
+        <fieldset>
+          <legend>가입사항</legend>
+          <div>
+            <label for="username">이름</label>
+            <input type="text" id="username" />
+          </div>
+        </fieldset>
+      </div>
+      <div>
+        <input type="file" name="file" id="file" multiple />
+      </div>
+      <div>
+        <input type="hidden" name="bno" value="1" />
+      </div>
+      <input type="submit" value="전송" />
+      <input type="reset" value="초기화" />
+      <!--아무런 기능도 없는 버튼 생성-->
+      <input type="button" value="클릭" />
+      <!--submit 버튼 생성-->
+      <button>버튼1</button>
+      <button type="submit">버튼4</button>
+      <button type="reset">버튼2</button>
+      <button type="button">버튼3</button>
+    </form>
+  </body>
+</html>

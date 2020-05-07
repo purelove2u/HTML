@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <fieldset>
+        <legend>필수 사항</legend>
+        <br />
+        <div>
+          <label for="username">이름</label>
+          <input type="text" id="username" />
+        </div>
+        <br />
+        <div>
+          <label for="email">이메일</label>
+          <input type="text" id="email" />
+        </div>
+        <br />
+        <div>
+          <label for="password">비밀번호</label>
+          <input type="text" id="password" />
+        </div>
+        <br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>부가 입력 사항</legend>
+        <br />
+        <div>
+          <label for="birth">생년월일</label>
+          <input type="date" id="birth" />
+        </div>
+        <br />
+        <div>
+          <label for="address">거주지를 선택해 주세요</label>
+          <br />
+          <select name="address" id="address">
+            <option value="서울시">서울시</option>
+            <option value="경기도">경기도</option>
+            <option value="부산광역시">부산광역시</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="hobby">취미</label>
+          <input type="checkbox" name="reading" id="reading" />독서
+          <input type="checkbox" name="travel" id="travel" />여행
+          <input type="checkbox" name="movie" id="movie" />영화감상
+        </div>
+        <br />
+        <div>
+          <label for="password">비밀번호</label>
+          <input type="text" id="password" />
+        </div>
+        <br />
+        <div>
+          <label for="photo">사진을 등록해주세요</label>
+          <input type="file" name="file" id="file" />
+        </div>
+        <br />
+        <div>
+          <label for="textarea">방문 경로를 말씀해주세요</label>
+          <br />
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+    </div>
+    <br />
+    <div>
+      <button type="submit">회원가입</button>
+      <button type="reset">재작성</button>
+      <button type="submit">전송</button>
+    </div>
+  </body>
+</html>
